@@ -1,60 +1,146 @@
-body {
-  background-color:#222;
-  font-family: "animalitos";
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+:after {
+  content: "";
+}
+
+.icon a{
+  color: white;
+  font-size: 2em;
+}
+
+section {
+  position: relative;
+  left: 100px;
 }
 
 h1 {
-  text-align:center;
-  color:#fff;
-  font-size:18px;
+  margin:80px 0 10px 0;
+  font-size: 52px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #DC143C,
+  2px 2px 0px #DC143C,
+  3px 3px 0px #DC143C,
+  4px 4px 0px #DC143C;
 }
 
-/* All Buttons */
-.buttons {
-  position:relative;
-  display:inline-block;
-  margin:0 auto;
-  padding:20px;
+h2 {
+  font-size: 24px;
+}
+
+body {
+  background: lightblue;
+  color: white;
+  max-width:640px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height:1.4;
+  font-smoothing: anti-aliased;
+}
+
+nav {
+  font-family: "animalitos";
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+nav ul {
   text-align: center;
+  list-style-type: none;
 }
 
-i {
+nav ul li {
+  position: relative;
+  width: 70px;
+  cursor: pointer;
+  background: crimson;
+  text-transform: uppercase;
+  transition:all .4s ease-out;
+}
+
+nav ul li:after {
+  position: absolute;
+  background: white;
+  color: crimson;
+  top:0;
+  left: 70px;
+  width: 70px; height: 100%;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: 0 100%;
+  transition:all .4s ease-out;
+}
+
+nav ul li:nth-child(1):after {
+  content: "Zebra";
+  line-height: 88px;
+}
+nav ul li:nth-child(2):after {
+  content: "Turttle";
+  line-height: 88px;
+}
+nav ul li:nth-child(3):after {
+  content: "Duck";
+  line-height: 85px;
+}
+nav ul li:nth-child(4):after {
+  content: "Chick";
+  line-height: 70px;
+}
+
+nav ul li:hover {
+  background-color: #333;
+  transform: translateX(70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+  transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+nav ul li > div {
+  display: inline-block;
+  padding: 25px 0;
+  background: transparent;
+}
+
+nav ul li div { position: relative; }
+
+
+/*///////////////////////center buttons/////////////////////////////*/
+
+.container{
+  margin-left: 50%;
+  margin-top: 24%;
+}
+
+.box{
   font-size: 4em;
-  text-align: center;
+  color: #53150B;
 }
 
-/* chick */
-
-.chick {
-  position:relative;
-  display:block;
-  background:#fff;
-  padding: 0;
-  float:left;
-  line-height:50px;
-  width: 50px;
-  height:50px;
-  border: 0;
-  border-radius: 10px;
-  cursor:pointer;
-  outline:none;
+.icon-mouse{
+  -webkit-transform-origin: 50% 107%;
+      transform-origin: 50% 107%;
+  -webkit-animation: grdAiguille 2s linear infinite;
+      animation: grdAiguille 2s linear infinite;
 }
 
-/* chick button 1 */
+@-webkit-keyframes grdAiguille{
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
 
-.button1 {
-  widows: 100%;
-  color: #e45;
-  background: #fff;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+@keyframes grdAiguille{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
 }
-.button1:hover {
-  -webkit-transform:rotate(360deg);
-  -moz-transform:rotate(360deg);
-  -o-transform:rotate(360deg);
-  transform:rotate(360deg);
-}
+
 
