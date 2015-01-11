@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'key-font';
-  src: url('../font/key-font.eot?41195030');
-  src: url('../font/key-font.eot?41195030#iefix') format('embedded-opentype'),
-       url('../font/key-font.woff?41195030') format('woff'),
-       url('../font/key-font.ttf?41195030') format('truetype'),
-       url('../font/key-font.svg?41195030#fontello') format('svg');
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?44041559');
+  src: url('../font/fontello.eot?44041559#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?44041559') format('woff'),
+       url('../font/fontello.ttf?44041559') format('truetype'),
+       url('../font/fontello.svg?44041559#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,46 +13,45 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'key-font';
-    src: url('../font/key-font.svg?41195030#fontello') format('svg');
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?44041559#fontello') format('svg');
   }
 }
 */
-
+ 
  [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "key-font";
+  font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
-
+ 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
-
+ 
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-
+     
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
-
+ 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
-
+ 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
-
+ 
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-
-.icon-key:before { content: '\e800'; } /* '' */
-.icon-codeopen:before { content: '\e801'; } /* '' */
-.icon-dropbox:before { content: '\e802'; } /* '' */
-.icon-upload:before { content: '\e803'; } /* '' */
-.icon-download:before { content: '\e804'; } /* '' */
-.icon-erase:before { content: '\e805'; } /* '' */
+ 
+.icon-chick:before { content: '\e800'; } /* '' */
+.icon-duck:before { content: '\e806'; } /* '' */
+.icon-mouse:before { content: '\e807'; } /* '' */
+.icon-turttle:before { content: '\e808'; } /* '' */
+.icon-zebra:before { content: '\e809'; } /* '' */
