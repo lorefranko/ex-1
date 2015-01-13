@@ -32,7 +32,7 @@ h2 {
 }
 
 body {
-  background: lightblue;
+  background: rgb(169, 212, 226);
   color: white;
   max-width:640px;
   font-family: 'Montserrat', sans-serif;
@@ -59,15 +59,15 @@ nav ul li {
   position: relative;
   width: 70px;
   cursor: pointer;
-  background: crimson;
+  background: rgb(234, 18, 59);
   text-transform: uppercase;
   transition:all .4s ease-out;
 }
 
 nav ul li:after {
   position: absolute;
-  background: white;
-  color: crimson;
+  background: #fff;
+  color: rgb(234, 18, 59);
   top:0;
   left: 70px;
   width: 70px; height: 100%;
